@@ -1,10 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+
+.game-font {
+    font-family: "Press Start 2P", system-ui;
+    color: #efefef;
+}
+
+.btn-font {
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    font-weight: bold;
+    color: #222222;
+    background-color: #efefef;
+    height: 3em;
+    width: 8em;
+    outline: none;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.btn-font:hover {
+    background-image: radial-gradient(#efefef, grey);
 }
 
 #container {
     height: 100vh;
     background-color: #222222;
+    display: flex;
+    flex-direction: column;
+}
+
+#headContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex: 0.1;
+}
+
+#titleContainer {
+    text-align: center;
+    flex: 0.15;
+}
+
+.title-font {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+#markRule {
+    position: relative;
+    flex: 0.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hrRule {
+    border-width: 3px;
+    width: 100vw;
+    border-style: solid;
+    border-color: #efefef;
+    z-index: 1;
+    position: absolute;
+}
+
+#mark {
+    width: 150px;
+    text-align: center;
+    padding: 32px 32px;
+    z-index: 2;
+    position: absolute;
+}
+
+.mark-font {
+    font-family: "Press Start 2P", system-ui;
+    font-size: xxx-large;
+    color: #222222;
+    background-color: #efefef;
+}
+
+#checkScoreContainer {
+    flex: 0.6;
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkContainer {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.5em;
+}
+
+#checkNumber {
+    height: 2em;
+    width: 4em;
+    font-size: xxx-large;
+    text-align: center;
+    background-color: #222222;
+    color: #efefef;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    border-color: #efefef;
+}
+
+
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#scoreContainer {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5em;
+}
+
+#startContainer {
+    flex: 0.2;
+    font-size: large;
+    align-self: center;
+}
+
+#playerScore {
+    flex: 0.05;
+    font-size: large;
+}
+
+#playerHighScore {
+    flex: 0.05;
+    font-size: large;
+}
+
+#playerScoreIcon {
+    color: red;
+}
+
+#playerHighScoreIcon {
+    color: yellow;
 }
