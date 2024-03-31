@@ -91,6 +91,7 @@
     flex: 0.6;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #checkContainer {
@@ -100,6 +101,9 @@
     align-items: center;
     justify-content: center;
     row-gap: 1.5em;
+    min-width: 458px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #checkNumber {
@@ -115,7 +119,6 @@
     border-color: #efefef;
 }
 
-
 .no-spinner::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
@@ -126,6 +129,9 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 1.5em;
+    min-width: 458px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #startContainer {
@@ -137,6 +143,10 @@
 #playerScore {
     flex: 0.05;
     font-size: large;
+}
+
+#playerScoreValue {
+    text-align: end;
 }
 
 #playerHighScore {
