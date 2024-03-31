@@ -7,4 +7,4 @@ Highscore will reset if the user refreshes the browser.
 
 Hope you will enjoy the game.
 
-!!! The repository is meant for the development, but must not be used without my consent. !!!
+!!! The repository is meant for the development, but must not be used in the production environment without my consent. !!!
